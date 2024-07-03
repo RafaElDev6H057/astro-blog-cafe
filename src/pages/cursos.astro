@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Curso from "../components/Curso.astro";
+---
+
+<Layout title="Nuestros Cursos">
+  <main class="p-5 max-w-[1200px] mx-auto">
+    <h3 class="text-center text-[2rem] font-bold my-3">
+      Nuestros Proximos Cursos y Talleres
+    </h3>
+    <Curso
+      imagen="/curso1.jpg"
+      altImagen="Una taza de café junto a un croissant"
+      titulo="Técnicas de Extraccion de Café"
+      precio="Gratis"
+      cupo="20"
+      descripcion="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi fugiat inventore ratione qui maiores veritatis est dolorum nobis, architecto alias? Minus tempore corporis consequuntur illo adipisci soluta dignissimos eos ducimus. Aliquam et hic, veritatis omnis excepturi minus tempora consequatur voluptas?"
+    />
+
+    <Curso
+      imagen="/curso2.jpg"
+      altImagen="Una taza de café con un diseño bonito de una hoja"
+      titulo="Taller para Tostar y Moler Granos"
+      precio="Gratis"
+      cupo="30"
+      descripcion="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi fugiat inventore ratione qui maiores veritatis est dolorum nobis, architecto alias? Minus tempore corporis consequuntur illo adipisci soluta dignissimos eos ducimus. Aliquam et hic, veritatis omnis excepturi minus tempora consequatur voluptas?"
+    />
+
+    <Curso
+      imagen="/curso3.jpg"
+      altImagen="Dos tazas de café con distintos diseños"
+      titulo="4 Recetas de Café para Principiantes"
+      precio="$10"
+      cupo="15"
+      descripcion="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi fugiat inventore ratione qui maiores veritatis est dolorum nobis, architecto alias? Minus tempore corporis consequuntur illo adipisci soluta dignissimos eos ducimus. Aliquam et hic, veritatis omnis excepturi minus tempora consequatur voluptas?"
+    />
+  </main>
+</Layout>

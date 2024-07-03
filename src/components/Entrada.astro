@@ -1,0 +1,24 @@
+---
+interface Props {
+  imagen: string;
+  imagenAlt: string;
+  subtitulo: string;
+  texto: string;
+}
+
+const { imagen, imagenAlt, subtitulo, texto } = Astro.props;
+---
+
+<article
+  class="mb-6 border-b border-solid border-black border-opacity-20 last:border-none"
+>
+  <img src={imagen} alt={imagenAlt} />
+  <h4 class="text-[28px] font-bold mb-4+ mt-2">{subtitulo}</h4>
+  <p class="leading-8">
+    {texto}
+  </p>
+  <a
+    class="text-white bg-black w-full py-4 px-5 block text-center uppercase font-bold my-4 font-PTSans text-lg md:w-max"
+    href="#">Leer Entrada</a
+  >
+</article>

@@ -1,0 +1,33 @@
+---
+interface Props {
+  imagen: string;
+  altImagen: string;
+  titulo: string;
+  precio: string;
+  cupo: string;
+  descripcion: string;
+}
+
+const { imagen, altImagen, titulo, precio, cupo, descripcion } = Astro.props;
+---
+
+<article
+  class="my-9 border-b border-solid border-black border-opacity-30 last:border-none"
+>
+  <div class="md:grid grid-cols-[1fr,2fr] gap-4 md:mb-9">
+    <img src={imagen} alt={altImagen} />
+
+    <div>
+      <h4 class="text-[28px] font-bold my-3">{titulo}</h4>
+      <p class="my-4 text-[20px] font-PTSans">
+        <span class="font-bold">Precio:</span>
+        {precio}
+      </p>
+      <p class="my-4 text-[20px] font-PTSans">
+        <span class="font-bold">Cupo:</span>
+        {cupo}
+      </p>
+      <p class="leading-[2rem] mb-6">{descripcion}</p>
+    </div>
+  </div>
+</article>

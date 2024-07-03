@@ -1,0 +1,7 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "indentRainbow.ignoreErrorLanguages": ["markdown"],
+  "indentRainbow.excludedLanguages": ["Astro", "plaintext"],
+  "indentRainbow.colorOnWhiteSpaceOnly": true,
+  "editor.tabSize": 2
+}

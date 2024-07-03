@@ -1,0 +1,14 @@
+---
+import Layout from "../layouts/Layout.astro";
+import NuestroBlog from "../components/NuestroBlog.astro";
+import Aside from "../components/Aside.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main
+    class="p-5 md:grid grid-cols-[2fr,1fr] md:gap-10 max-w-[1200px] mx-auto"
+  >
+    <NuestroBlog />
+    <Aside />
+  </main>
+</Layout>
